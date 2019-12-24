@@ -1,7 +1,14 @@
 import React ,{ Fragment } from "react";
-import {MuiThemeProvider} from '@material-ui/core';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/navstyle.css'
+
+import {MuiThemeProvider} from '@material-ui/core';
 import {connect} from 'react-redux';
 import {BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom';
 import primaryTheme from './themes/primaryTheme'
@@ -20,16 +27,19 @@ class App extends React.Component{
     }
   }
   render(){
-    
-    // const { location } = this.props;
-    // const { selectedLocale, alertType } = this.props;
-    // const currentAppLocale = AppLocale[selectedLocale.locale];
+  //   let nav=null
+  // if(isMobile){
+  //   nav = <MobileNav/>
+  // }else{
+  //  nav = 
+  // }
 
     return (
       <MuiThemeProvider theme={primaryTheme}>
       
         <Router>
-        <NavHeader/>
+          <NavHeader/>
+      
           <Fragment>
               <Switch>
                 <Route exact path="/">
@@ -60,4 +70,4 @@ class App extends React.Component{
 }
 
 export default App;
-// <Link className="nav-link" id="polio" to="/portofolio"><p style={{color:'white'}}>Portofolio</p></Link>
+// <Link classNameName="nav-link" id="polio" to="/portofolio"><p style={{color:'white'}}>Portofolio</p></Link>

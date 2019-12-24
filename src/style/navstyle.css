@@ -54,7 +54,7 @@
   
   
   li a:hover {
-    background-color: rgb(72, 151, 212,.8);
+    background: linear-gradient(to right top ,rgb(72, 151, 212,.8) rgb(92, 197, 227) rgb(84, 173, 179));
   }
  .pdropdownitem{
     

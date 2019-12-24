@@ -1,0 +1,78 @@
+/* nav background color */
+.bgnav1{
+    background:linear-gradient(to right bottom,rgb(77, 214, 200) rgb(7, 150, 152) rgb(14, 96, 126));
+}
+.bg_scm{
+    display:none;
+  margin-top: -12px;
+  padding-top: 5px;
+  position: relative;
+}
+#navbarsocialMedia:hover + .bg_scm{
+    display: block;
+}
+.bg_scm:hover{
+    background-image: url('https://i.pinimg.com/originals/3b/e8/40/3be840e706c4a8173169002ed64e41ed.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    width: 40rem;
+    height: 21rem;
+    display: block;
+    }
+/* sparate */
+
+
+/* hovering image portofolio */
+.bg_polio{
+    display:none;
+  margin-top: -12px;
+  padding-top: 5px;
+  position: relative;
+}
+#navbarpolioLink:hover + .bg_polio{
+    display: block;
+}
+.bg_polio:hover{
+    background-image: url('https://image.freepik.com/free-vector/abstract-white-background-with-blue-hexagonal-shapes_1017-19744.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    width: 40rem;
+    height: 20rem;
+    display: block;
+    }
+/* sparate */
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px ;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    background-color: rgb(72, 151, 212,.8);
+  }
+ .pdropdownitem{
+    
+ }
+ 
+
+
+/* literatur */
+/* #navbar-list-9{
+    display:none;
+  margin-top: -10px;
+  padding-top: 10px;
+  position: relative;
+}
+.navbar-toggler-icon:hover + #navbar-list-9{
+    display: block;
+}
+#navbar-list-9:hover{
+    display:block;
+} */
+/* navbar-toggler-icon */
